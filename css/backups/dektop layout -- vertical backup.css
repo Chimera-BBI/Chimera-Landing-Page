@@ -27,17 +27,11 @@ body {
   position: absolute;
   left: 0;
   top: 0;
-  width: 32.6666666667%;
-  height: 100%;
+  height: 32.6666666667%;
+  width: 100%;
   background: #252525;
   transition: transform 0.6s 0.7s, width 0.7s, opacity 0.6s 0.7s, z-index 0s 1.3s;
   will-change: transform, width, opacity;
-}
-@media (orientation: portrait) {
-  .el {
-    height: 32.6666666667%;
-    width: 100%;
-  }
 }
 .el:not(.s--active) {
   cursor: pointer;
@@ -208,12 +202,6 @@ body {
   transition: transform 0.5s, opacity 0.3s 1.4s;
   transform: translate3d(0, 1vw, 0);
 }
-@media (orientation: portrait) {
-  .el__index {
-    bottom: 0;
-    font-size: 13.3333333333vw;
-  }
-}
 .el:hover .el__index {
   transform: translate3d(0, 0, 0);
 }
@@ -261,13 +249,8 @@ body {
   transform: translate3d(0, 0, 0);
 }
 .el:nth-child(1) {
-  transform: translate3d(0%, 0, 0);
+  transform: translate3d(0, 0%, 0);
   transform-origin: 50% 50%;
-}
-@media (orientation: portrait) {
-  .el:nth-child(1) {
-    transform: translate3d(0, 0%, 0);
-  }
 }
 .cont.s--el-active .el:nth-child(1):not(.s--active) {
   transform: scale(0.5) translate3d(0%, 0, 0);
@@ -278,25 +261,15 @@ body {
   transition-delay: 0s;
 }
 .el:nth-child(1) .el__bg {
-  transform: translate3d(0%, 0, 0);
-}
-@media (orientation: portrait) {
-  .el:nth-child(1) .el__bg {
-    transform: translate3d(0, 0, 0);
-  }
+  transform: translate3d(0, 0, 0%);
 }
 .el:nth-child(1) .el__bg:before {
   transition-delay: 0s;
   background-image: url("../images/img3.jpg");
 }
 .el:nth-child(2) {
-  transform: translate3d(103.0612244898%, 0, 0);
+  transform: translate3d(0, 103.0612244898%, 0);
   transform-origin: 153.0612244898% 50%;
-}
-@media (orientation: portrait) {
-  .el:nth-child(2) {
-    transform: translate3d(0, 103.0612244898%, 0);
-  }
 }
 .cont.s--el-active .el:nth-child(2):not(.s--active) {
   transform: scale(0.5) translate3d(103.0612244898%, 0, 0);
@@ -307,25 +280,15 @@ body {
   transition-delay: 0.1s;
 }
 .el:nth-child(2) .el__bg {
-  transform: translate3d(-32.6666666667%, 0, 0);
-}
-@media (orientation: portrait) {
-  .el:nth-child(2) .el__bg {
-    transform: translate3d(0, 0, 0);
-  }
+  transform: translate3d(0, 0, -32.6666666667%);
 }
 .el:nth-child(2) .el__bg:before {
   transition-delay: 0.1s;
   background-image: url("../images/img4.jpg");
 }
 .el:nth-child(3) {
-  transform: translate3d(206.1224489796%, 0, 0);
+  transform: translate3d(0, 206.1224489796%, 0);
   transform-origin: 256.1224489796% 50%;
-}
-@media (orientation: portrait) {
-  .el:nth-child(3) {
-    transform: translate3d(0, 206.1224489796%, 0);
-  }
 }
 .cont.s--el-active .el:nth-child(3):not(.s--active) {
   transform: scale(0.5) translate3d(206.1224489796%, 0, 0);
@@ -336,12 +299,7 @@ body {
   transition-delay: 0.2s;
 }
 .el:nth-child(3) .el__bg {
-  transform: translate3d(-65.3333333333%, 0, 0);
-}
-@media (orientation: portrait) {
-  .el:nth-child(3) .el__bg {
-    transform: translate3d(0, 0, 0);
-  }
+  transform: translate3d(0, 0, -65.3333333333%);
 }
 .el:nth-child(3) .el__bg:before {
   transition-delay: 0.2s;
@@ -352,14 +310,9 @@ body {
 }
 .el.s--active {
   z-index: 1;
-  width: 100%;
+  height: 100%;
   transform: translate3d(0, 0, 0);
   transition: transform 0.6s, height 0.7s 0.7s, z-index 0s;
-}
-@media (orientation: portrait) {
-  .el.s--active {
-    height: 100%;
-  }
 }
 .el.s--active .el__bg {
   transform: translate3d(0, 0, 0);
@@ -383,4 +336,4 @@ body {
 .icon-link--twitter {
   left: auto;
   right: 5px;
-}/*# sourceMappingURL=dektop layout.css.map */
+}/*# sourceMappingURL=dektop layout -- vertical backup.css.map */
