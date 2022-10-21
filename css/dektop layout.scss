@@ -58,7 +58,13 @@
   .cont {
     position: relative;
     overflow: hidden;
-    height: 100vh;
+    height: 80vh;
+
+    @media ( orientation:portrait) { 
+      height: 90vh;
+    }
+
+    margin: 0%;
     padding: $vertPad $sidePad;
   
     &__inner {
