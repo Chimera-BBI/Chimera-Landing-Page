@@ -387,7 +387,9 @@
   
         .el__bg {
 
-          transform: translate3d($elW * $i * -1,0,0);
+          // transform: translate3d($elW * $i * -1,0,0);
+          transform: translate3d(-32.6666666667%,0,0);
+
 
           @media ( orientation:portrait) {
             transform: translate3d(0,0,0);
