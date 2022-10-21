@@ -1,0 +1,76 @@
+* {box-sizing: border-box;}
+    
+.header {
+  background-color: black;
+  padding: 15px 10px 0px 10px;
+  text-align: center;
+  align-items: center;
+
+}
+
+.header a {
+  color: #f1f1f1;
+  text-align: center;
+  text-decoration: none;
+  margin: 20px auto auto auto;
+
+
+}
+.header a img{
+  height: 8%;
+}
+
+
+
+
+
+@media screen and (max-width: 500px) {
+  .header a {
+    text-align: center;
+  }
+  
+}
+
+footer
+{
+    padding-bottom: 1% ;
+}
+
+
+footer .middle 
+{ 
+align-self: center;
+margin: auto;
+text-align: center;
+
+/* uncomment this to make it golden */
+/* background: linear-gradient(to right, #c59941, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent; */
+
+color: #f1f1f1;
+
+}
+
+footer a{
+    color: #f1f1f1;
+    text-decoration: none;
+}
+
+footer .middle .email
+{
+font-size: 18px;
+padding: 3px;
+}
+
+footer .middle .copyright
+{
+font-size: 15px;
+padding: 3px;
+padding-bottom: 5px;
+
+}
+
+footer .middle .socials img{
+height: 3.5%;
+}
