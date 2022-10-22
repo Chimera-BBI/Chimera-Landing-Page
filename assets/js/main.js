@@ -159,7 +159,7 @@ function heroSlider() {
         });
     }
 
-    const stopAutoplay = function () {
+     const stopAutoplay = function () {
         slider.autoplay = false;
         utils().clearRequestInterval(slider.handle);
     }
@@ -167,7 +167,7 @@ function heroSlider() {
     const waitForIdle = function () {
         !slider.autoplay && autoplay(false); //restart
         slider.idle = true;
-    }
+    } 
 
     const wheelControl = function () {
         slider.hero.addEventListener('wheel', e => {
@@ -177,9 +177,9 @@ function heroSlider() {
                 changeSlide(direction);
             }
         });
-    }
+    } 
 
-    const autoplay = function (initial) {
+     const autoplay = function (initial) {
         slider.autoplay = true;
         slider.items = slider.hero.querySelectorAll('[data-index]');
         slider.total = slider.items.length / 2;
@@ -188,7 +188,7 @@ function heroSlider() {
 
         initial && requestAnimationFrame(loop);
         slider.handle = utils().requestInterval(loop, slider.interval);
-    }
+    } 
 
     const loaded = function () {
         slider.hero.classList.add('loaded');
