@@ -116,6 +116,17 @@ body {
 
 .SwipeRight{
 
+    display: none;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 1vh;
+    padding-top: 3vh;
+    font-size: 2.5vh;
+}
+
+
+.ScrollDown{
+
     position: absolute;
     bottom: 0;
     padding-bottom: 1vh;
@@ -537,11 +548,15 @@ body {
         }
     }
 
-    // .SwipeRight{
+    .SwipeRight{
 
-    //     display: block;
-    // }
+        display: block;
+    }
     
+    .ScrollDown{
+
+    display: none;
+    }
 
 
 }
@@ -570,12 +585,15 @@ body {
         }
     }
 
-    // .SwipeRight{
+    .SwipeRight{
 
-    //     display: block;
-    // }
+        display: block;
+    }
     
+    .ScrollDown{
 
+    display: none;
+    }
 
 }
 
