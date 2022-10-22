@@ -2,13 +2,17 @@
 <html lang="en">
 
 <head>
+
+    <link rel="icon" href="./images/logo.svg">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Fullscreen Slider Example</title>
+    <title>Chimère Pay</title>
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
+    <link rel="stylesheet" href="./assets/scss/style.css">
+
     <link rel="stylesheet" href="./video.css">
 </head>
 
@@ -19,7 +23,7 @@
     <div id="hero-slider">
 
         <div id="logo" class="mask">
-            <span class="logo-text masked">Chimère Pay</span>
+            <a href="index.html"> <span class="logo-text masked " style="text-align: center; margin:auto;"> <span class=".vertical-center">Chimère Pay</span></span></a>
         </div>
 
         <div id="slideshow">
@@ -75,57 +79,72 @@
                         <div class="slide-image" style="background-image: url()"></div>
                     </div>
                 </div>
+                <div class="slide" data-index="9">
+                    <div class="abs-mask">
+                        <div class="slide-image" style="background-image: url()"></div>
+                    </div>
+                </div>
             </div>
 
 
             <div id="slides-aux" class="slides mask">
 
-                <h2 class="slide-title slide" data-index="0">
-                    <p>Introducing Chimère Pay</p>
-                    <p>A P2P Decentralized Stablecoin Payment System</p>
-                    <p>Think: Google Pay for Stablecoin Payments</p>
-                </h2>
+                <div class="slide-title slide" data-index="0">
+                    <h2>Introducing Chimère Pay</h2>
+                    <p style="font-style: bold;">A P2P Decentralized Stablecoin Payment System</p>
+                    <p class="making_it_small">Think: Google Pay for Stablecoin Payments</p>
+                </div>
 
-                <h2 class="slide-title slide" data-index="1">
-                <p>Our Goal</p>
+                <div class="slide-title slide" data-index="1">
+                <h2>Our Goal</h2>
                 <p>We envision to onboard and retain atleast 20% of the Global Population to the Stablecoin Economy.</p>
-                </h2>
+                </div>
 
-                <h2 class="slide-title slide" data-index="2">
-                <p>Why Stablecoins?</p>
+                <div class="slide-title slide" data-index="2">
+                <h2>Why Stablecoins?</h2>
                 <p>Fiat Currencies are centralized silos inhibiting Consumers to consume and Businesses to operate globally whereas Decentralized Cryptocurrencies are too volatile to be accepted as a reliable medium of exchange, thus making Stablecoins the only viable solution for global commerce.</p>
-                </h2>
+                </div>
 
-                <h2 class="slide-title slide" data-index="3">
-                <p>Why Us?</p>
+                <div class="slide-title slide" data-index="3">
+                <h2>Why Us?</h2>
                 <p>The process of accessing and using Stablecoins via Decentralized Crypto Wallets is too complicated for regular consumers and businesses whereas Centralized Exchanges compromise on the user’s privacy, and ownership, and are not purposely built for payments.</p>
+                <br>
                 <p>Thus, we are proposing a first of its kind P2P Stablecoin Payment Solution which will ensure a smooth User Experience for regular Consumers and Businesses while maintaining Decentralization.</p>
-                </h2>
+                </div>
 
-                <h2 class="slide-title slide" data-index="4">
-                <p>State of the Art Cloud Encryption</p>
+                <div class="slide-title slide" data-index="4">
+                <h2>State of the Art Cloud Encryption</h2>
                 <p>Storing complex recovery phrases and private keys won't be required anymore, they will be safe in your personal cloud drive from the very beginning, locked with a password of your choice, secured by our state of the art encryption.</p>
-                </h2>
+                </div>
 
-                <h2 class="slide-title slide" data-index="5">
-                    <p>Simplified Payments</p>
-                    <p>Absurd public keys, complex transaction fee management, multi chain rpc network management would be things of the past. Say hello to Mobile Phone Numbers with Names and Pictures as Payment IDs.</p>
-                </h2>
+                <div class="slide-title slide" data-index="5">
+                    <h2>Simplified Payments</h2>
+                    <p>Absurd public keys, complex transaction fee management, multi chain RPC network management would be things of the past. Say hello to Mobile Phone Numbers with Names and Pictures as Payment IDs.</p>
+                </div>
 
-                <h2 class="slide-title slide" data-index="6">
-                    <p>No Transaction limits</p>
+                <div class="slide-title slide" data-index="6">
+                    <h2>No Transaction Limits</h2>
                     <p>Of course.</p>
-                </h2>
+                </div>
 
-                <h2 class="slide-title slide" data-index="7">
-                    <p>Smooth Fiat Integration</p>
+                <div class="slide-title slide" data-index="7">
+                    <h2>Smooth Fiat Integration</h2>
                     <p>Just starting out with or feel like exiting the Stablecoin Economy? Our Fiat Integration will ensure your smooth entries and exits.</p>
-                </h2>
+                </div>
 
-                <h2 class="slide-title slide" data-index="8">
-                    <p>Your Account, Your Phrases, Your Keys</p>
+                <div class="slide-title slide" data-index="8">
+                    <h2>Your Account, Your Phrases, Your Keys</h2>
                     <p>The best part: all of this: Decentralized. Don't think we are serving you well? Feel free to restrict and export your on chain accounts anytime you wish.</p>
-                </h2>
+                </div>
+
+                <div class="slide-title slide" data-index="9">
+                    <h2>Stay Tuned For Further Updates</h2>
+
+                </div>
+
+                <div  class = "SwipeRight" style="color: white; text-align: center;">
+                    <<<<<< Swipe 
+                </div>
 
             </div>
 
@@ -143,7 +162,7 @@
         <nav id="slider-nav">
             <span class="current">01</span>
             <span class="sep"></span>
-            <span class="total">09</span>
+            <span class="total">10</span>
         </nav>
 
     </div>
