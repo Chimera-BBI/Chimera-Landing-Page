@@ -293,7 +293,7 @@ body {
 }
 .el:nth-child(1) .el__bg:before {
   transition-delay: 0s;
-  background-image: url("../images/img3.jpg");
+  background-image: url("../images/1.jpg");
 }
 .el:nth-child(2) {
   transform: translate3d(103.0612244898%, 0, 0);
@@ -322,7 +322,7 @@ body {
 }
 .el:nth-child(2) .el__bg:before {
   transition-delay: 0.1s;
-  background-image: url("../images/img4.jpg");
+  background-image: url("../images/2.jpg");
 }
 .el:nth-child(3) {
   transform: translate3d(206.1224489796%, 0, 0);
@@ -351,7 +351,7 @@ body {
 }
 .el:nth-child(3) .el__bg:before {
   transition-delay: 0.2s;
-  background-image: url("../images/img5.jpg");
+  background-image: url("../images/3.jpg");
 }
 .el:hover .el__bg:after {
   opacity: 0;
