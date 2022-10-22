@@ -345,7 +345,7 @@ body {
 
 .el:nth-child(1) .el__bg:before {
   transition-delay: 0s;
-  background-image: url("../images/1.jpg");
+  background-image: url("../images/1.png");
 }
 
 .el:nth-child(2) {
@@ -381,7 +381,7 @@ body {
 
 .el:nth-child(2) .el__bg:before {
   transition-delay: 0.1s;
-  background-image: url("../images/2.jpg");
+  background-image: url("../images/2.png");
 }
 
 .el:nth-child(3) {
@@ -417,7 +417,7 @@ body {
 
 .el:nth-child(3) .el__bg:before {
   transition-delay: 0.2s;
-  background-image: url("../images/3.jpg");
+  background-image: url("../images/3.png");
 }
 
 .el:hover .el__bg:after {
