@@ -100,7 +100,7 @@ function heroSlider() {
         handle: null,
         idle: true,
         activeIndex: -1,
-        interval: 35000
+        interval: 100000
     };
 
     const setHeight = function (holder, items) {
