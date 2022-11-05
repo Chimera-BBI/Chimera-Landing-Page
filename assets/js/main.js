@@ -172,6 +172,8 @@ function heroSlider() {
     const wheelControl = function () {
         slider.hero.addEventListener('wheel', e => {
             if (slider.idle) {
+                console.log(e);
+                console.log(e.deltaY);
                 const direction = e.deltaY > 0 ? 'next' : 'prev';
                 stopAutoplay();
                 changeSlide(direction);
@@ -196,16 +198,36 @@ function heroSlider() {
 
     const touchControl = function () {
         const touchStart = function (e) {
-            slider.ts = parseInt(e.changedTouches[0].clientX);
+            slider.tsx = parseInt(e.changedTouches[0].clientX);
+            slider.tsy = parseInt(e.changedTouches[0].clientY);
             window.scrollTop = 0;
         }
 
         const touchMove = function (e) {
-            slider.tm = parseInt(e.changedTouches[0].clientX);
-            const delta = slider.tm - slider.ts;
+            slider.tmx = parseInt(e.changedTouches[0].clientX);
+            slider.tmy = parseInt(e.changedTouches[0].clientY);
+
+            const deltax = slider.tmx - slider.tsx;
+            const deltay = slider.tmy - slider.tsy;
+
+
+            
             window.scrollTop = 0;
 
             if (slider.idle) {
+
+                console.log("X change -- ",deltax);
+                console.log("Y change -- ",deltay);
+    
+                var delta = deltax;
+
+                if( Math.abs(deltay) > Math.abs(deltax) )
+                {
+                    delta = deltay;
+                }
+
+                console.log("sliding");
+                console.log(delta);
                 const direction = delta < 0 ? 'next' : 'prev';
                 stopAutoplay();
                 changeSlide(direction);
